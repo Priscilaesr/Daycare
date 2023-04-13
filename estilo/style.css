@@ -27,12 +27,8 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor5);
     font-family: var(--fonte-padrao);
-}
-
-a.externo::after {
-    content: '\00A0\1F517';
 }
 
 header {
@@ -43,7 +39,7 @@ header {
 }
 
 header > h1 {
-    color: white;
+    color: var(--cor5);
     font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
@@ -54,7 +50,7 @@ header > h1 {
 header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
-    color: white;
+    color: var(--cor4);
     max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
@@ -79,7 +75,7 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: var(--cor3);
+    background-color: rgb(213, 182, 193);
     color: var(--cor5);
 }
 
@@ -111,6 +107,14 @@ main h2 {
     text-indent: 8px;
 }
 
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
 img.me {
     width: 200px; 
     box-shadow: 2px 2px;
@@ -118,14 +122,6 @@ img.me {
     border-radius: 5px;
     margin: auto;
     display: block;
-}
-
-main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 2em;
 }
 
 main strong {
@@ -154,6 +150,9 @@ main img.pequena {
     max-width: 350px;
     display: block;
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+    color: rgba(0, 0, 0, 0.689);
 }
 
 div.video {
@@ -172,29 +171,8 @@ div.video > iframe {
     height: 100%;
 }
 
-aside {
-    background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
-}
-
-aside > h3 {
-    background-color: var(--cor4);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-aside > ul {
-    list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside;
-    columns: 2;
-}
-
 footer {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     color: white;
     text-align: center;
     font-size: 0.8em;
